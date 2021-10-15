@@ -1,0 +1,10 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: $very-dark-blue-main-background;
+    color: $white-main-heading-stats;
+    font-family: 'Inter', sans-serif;
+    font-size: $font-size;
+}

@@ -5,3 +5,101 @@
 
 @import 'base/reset';
 @import 'base/typography';
+
+#container{
+    background-color: $dark-desaturated-blue-card-background;
+    width: 328px;
+    margin: 5.5rem auto;
+    border-radius: 10px;
+    @media screen and(min-width:$desktop){
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 1110px;
+        height: 446px;
+    }
+}
+.right{
+    position: relative;
+    width: 328px;
+    height: 240px;
+    @media screen and(min-width:$desktop){
+        height: 446px;
+        width: 540px;
+
+    }
+    *{
+        width: 328px;
+        height: 240px;
+        border-radius: 10px 10px 0 0;
+        @media screen and(min-width:$desktop){
+            height: 446px;
+            width: 540px;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+    &__image{
+        background: center/cover url(../../images/image-header-mobile.jpg) no-repeat;
+        z-index: -1;
+    }
+    &__filter{
+        position:absolute;
+        z-index: 1;
+        top:0;
+        background-color: rgba($soft-violet-accent, $alpha: 0.3);
+    }
+}
+li,ul{
+    list-style: none;
+    padding: 0;
+}
+.left{
+    margin: 1.5625rem;
+    text-align: center;
+    @media screen and(min-width:$desktop){
+        width: 570px;
+        margin: 54px;
+        text-align: left;
+        margin-right: 115px;
+    }
+    h1{
+        font-size: $font-size*1.8;
+        @media screen and(min-width:$desktop){
+            font-size: $font-size*2.5;
+        }
+        span{
+            color:$soft-violet-accent;
+        }
+    }
+    h2{
+       font-size: $font-size;
+       font-family: 'Lexend Deca', sans-serif;
+       font-weight: map-get($weights, thin );
+       color: $slightly-transparent-white-main-paragraph;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0;
+        @media screen and(min-width:$desktop){
+            flex-direction: row;
+            margin-top: 50px;
+            li{
+                margin-right: 60px;
+            }
+        }
+        li{
+            margin-bottom: 20px;
+            h3{
+                margin: 0;
+                font-size: $font-size*1.5;
+            }
+            p{
+                margin: 5px 0;
+                text-transform: uppercase;
+                font-size: $font-size*0.85;
+                color: $slightly-transparent-white-main-paragraph;
+            }
+        }
+    }
+}

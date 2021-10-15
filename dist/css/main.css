@@ -1,1 +1,155 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #090b1a;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+}
+
+#container {
+  background-color: #1b1938;
+  width: 328px;
+  margin: 5.5rem auto;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 75em) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 1110px;
+    height: 446px;
+  }
+}
+
+.right {
+  position: relative;
+  width: 328px;
+  height: 240px;
+}
+
+@media screen and (min-width: 75em) {
+  .right {
+    height: 446px;
+    width: 540px;
+  }
+}
+
+.right * {
+  width: 328px;
+  height: 240px;
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 75em) {
+  .right * {
+    height: 446px;
+    width: 540px;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.right__image {
+  background: center/cover url(../../images/image-header-mobile.jpg) no-repeat;
+  z-index: -1;
+}
+
+.right__filter {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background-color: rgba(170, 92, 219, 0.3);
+}
+
+li, ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left {
+  margin: 1.5625rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 75em) {
+  .left {
+    width: 570px;
+    margin: 54px;
+    text-align: left;
+    margin-right: 115px;
+  }
+}
+
+.left h1 {
+  font-size: 1.6875rem;
+}
+
+@media screen and (min-width: 75em) {
+  .left h1 {
+    font-size: 2.34375rem;
+  }
+}
+
+.left h1 span {
+  color: #aa5cdb;
+}
+
+.left h2 {
+  font-size: 0.9375rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 0;
+}
+
+@media screen and (min-width: 75em) {
+  .left ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 50px;
+  }
+  .left ul li {
+    margin-right: 60px;
+  }
+}
+
+.left ul li {
+  margin-bottom: 20px;
+}
+
+.left ul li h3 {
+  margin: 0;
+  font-size: 1.40625rem;
+}
+
+.left ul li p {
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-size: 0.79688rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+/*# sourceMappingURL=main.css.map */
