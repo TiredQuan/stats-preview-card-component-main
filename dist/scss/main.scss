@@ -9,9 +9,10 @@
 #container{
     background-color: $dark-desaturated-blue-card-background;
     width: 328px;
-    margin: 5.5rem auto;
+    margin: 88px auto;
     border-radius: 10px;
     @media screen and(min-width:$desktop){
+        margin: 180px auto;
         display:flex;
         flex-direction: row-reverse;
         justify-content: space-around;

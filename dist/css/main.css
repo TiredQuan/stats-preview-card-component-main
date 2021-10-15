@@ -14,12 +14,13 @@ body {
 #container {
   background-color: #1b1938;
   width: 328px;
-  margin: 5.5rem auto;
+  margin: 88px auto;
   border-radius: 10px;
 }
 
 @media screen and (min-width: 75em) {
   #container {
+    margin: 180px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
